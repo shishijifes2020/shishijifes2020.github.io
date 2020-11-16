@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+video{
+    max-width: 100%;
+}
+.backvideo{
+        z-index:-9999;
+}
+.video-wrap {
+  position: relative;
+}
+.videos{
+      font-family: serif;          
+  color: #fff;
+  font-size: 400%;
+  position: absolute;
+  left: 30%;
+  top: 200px;
+  z-index: 1;
+}
+.set{
+    margin-left:50px;
+}
+.mini{
+ width:170px;
+margin:20px;
+    float:left;
+}
+/* HEADER
+------------------------------- */
+.logo {
+    width: 170px;
+    margin-top: 14px;
+}
+
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    font-family:"BLOCKblock font;
+}
+
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/* HOME
+------------------------------- */
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: -10px 0 60px;
+}
+
+
+/* 見出し */
+.page-title {
+    font-size: 5rem;
+    font-family: 'Nu あんこもち 標準';
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.page-title-detail {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align:center;
+}
+
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    background: #006400;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home {
+    background-image: url(../images/background_nameko.jpg);
+    min-height: 100vh;
+}
+#home .page-title {
+    text-transform: none;
+    font-family: 'Nu あんこもち 標準';
+}
+
+
+
+
+
+
+
+------------------------------- */
+#about {
+    background-image: url(../images/backindex.png);
+    height: 270px;
+
+    margin-bottom: 40px;
+}
+#about .page-title {
+    text-align: center;
+}
+
+
+/* フッター
+------------------------------- */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+.foot{
+    margin-top:200px;
+}
+
+
+
+/* 画像部分 */
+article {
+    width: 46%;
+}
+
+/* テキスト部分 */
+aside{
+    width: 50%;
+
+}
+
+/* テキスト部分上部 */
+section{
+    height: : 30%;
+}
+/* テキスト部分下部 */
+main{
+    height: : 70%;
+}
+
+
+
+.about-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat {
+    margin-left: 20px;
+}
+.center{
+    text-align: center;
+    margin-left:200px
+}
+
+
+
+
+
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+
+
+    /* HOME */
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /* ABOUT */
+    .about-contents {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+
+    #about .page-title {
+        margin-top: 30px;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+
+
+
+    /*WORK */
+    .work-content {
+        margin-top: 20%;
+    }
+}
+
+
+
+
+
+/* WORK
+------------------------------- */
+#work {
+    background-image:
+}
+.work-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.work-content .page-title {
+    text-align: center;
+}
+.work-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+.work-content-detail {
+    max-width: 1000px;
+    margin-top: 10%;
+}
+.work-content-detail .page-title {
+    text-align: center;
+}
+.work-content-detail p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
